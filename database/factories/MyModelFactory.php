@@ -3,17 +3,16 @@
 namespace Spatie\MyFirstLaravelPackage\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Spatie\MyFirstLaravelPackage\Models\MyModel;
 
-/*
-class ModelFactory extends Factory
+class MyModelFactory extends Factory
 {
-    protected $model = YourModel::class;
+    protected $model = MyModel::class;
 
     public function definition()
     {
         return [
-
+            'name' => $this->faker->firstName
         ];
     }
 }
-*/

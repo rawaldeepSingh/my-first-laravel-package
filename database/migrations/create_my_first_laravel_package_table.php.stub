@@ -8,10 +8,10 @@ class CreateMyFirstLaravelPackageTable extends Migration
 {
     public function up()
     {
-        Schema::create('my-first-laravel-package_table', function (Blueprint $table) {
+        Schema::create('my_models', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            // add fields
+            $table->string('name');
 
             $table->timestamps();
         });
