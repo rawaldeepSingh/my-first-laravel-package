@@ -2,8 +2,8 @@
 
 namespace Spatie\MyFirstLaravelPackage\Tests;
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\MyFirstLaravelPackage\MyFirstLaravelPackageServiceProvider;
 
@@ -38,6 +38,5 @@ class TestCase extends Orchestra
         
         include_once __DIR__.'/../database/migrations/create_my_first_laravel_package_table.php.stub';
         (new \CreateMyFirstLaravelPackageTable())->up();
-        
     }
 }
